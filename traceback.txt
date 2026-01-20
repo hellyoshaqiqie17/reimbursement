@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "C:\reimbursement\minimal_test.py", line 22, in <module>
+    ocr_results = ocr.extract_text(processed)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\reimbursement\app\ocr\ocr_engine.py", line 165, in extract_text
+    result = ocr.ocr(image)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\typing_extensions.py", line 3004, in wrapper
+    return arg(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddleocr\_pipelines\ocr.py", line 231, in ocr
+    return self.predict(img, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddleocr\_pipelines\ocr.py", line 213, in predict
+    return list(
+           ^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\pipelines\_parallel.py", line 129, in predict
+    yield from self._pipeline.predict(
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\pipelines\ocr\pipeline.py", line 343, in predict
+    doc_preprocessor_results = list(
+                               ^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\pipelines\_parallel.py", line 129, in predict
+    yield from self._pipeline.predict(
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\pipelines\doc_preprocessor\pipeline.py", line 177, in predict
+    for item in self.doc_unwarping_model(rot_imgs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\models\base\predictor\base_predictor.py", line 272, in __call__
+    yield from self.apply(input, **kwargs)
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\models\base\predictor\base_predictor.py", line 329, in apply
+    prediction = self.process(batch_data, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\models\image_unwarping\predictor.py", line 86, in process
+    batch_imgs = self.preprocessors["Normalize"](imgs=batch_raw_imgs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\models\common\vision\processors.py", line 270, in __call__
+    return [self.norm(img) for img in imgs]
+            ^^^^^^^^^^^^^^
+  File "C:\Users\MSI MODERN 14\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\paddlex\inference\models\common\vision\processors.py", line 260, in norm
+    for c in range(img.shape[2]):
+                   ~~~~~~~~~^^^
+IndexError: tuple index out of range

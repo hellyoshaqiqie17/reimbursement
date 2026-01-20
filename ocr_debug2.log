@@ -1,0 +1,12 @@
+Running PaddleOCR...
+OCRResult class: <class 'paddlex.inference.pipelines.ocr.result.OCRResult'>
+OCRResult dir: ['clear', 'copy', 'fromkeys', 'get', 'get_minarea_rect', 'img', 'items', 'json', 'keys', 'pop', 'popitem', 'print', 'save_all', 'save_to_img', 'save_to_json', 'setdefault', 'str', 'update', 'values']
+
+Trying to iterate:
+  0: input_path
+  1: page_index
+  2: doc_preprocessor_res
+  3: dt_polys
+  4: model_settings
+  5: text_det_params
+DONE

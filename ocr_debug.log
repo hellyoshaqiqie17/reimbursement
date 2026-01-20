@@ -1,0 +1,19 @@
+Loading image: c:\reimbursement\untuk_test\Screenshot 2026-01-11 181638.png
+Image shape: (867, 661, 3)
+Preprocessing...
+Processed shape: (867, 661, 3)
+Running PaddleOCR directly...
+Result type: <class 'list'>
+Result length: 1
+result[0] type: <class 'paddlex.inference.pipelines.ocr.result.OCRResult'>
+=== DICT FORMAT ===
+  input_path: None
+  page_index: None
+  doc_preprocessor_res: (len=7) type=<class 'paddlex.inference.pipelines.doc_preprocessor.result.DocPreprocessorResult'>
+ERROR: 0
+Traceback (most recent call last):
+  File "C:\reimbursement\debug_ocr_struct.py", line 46, in <module>
+    log(f"    first element: {value[0]}")
+                              ~~~~~^^^
+KeyError: 0
+

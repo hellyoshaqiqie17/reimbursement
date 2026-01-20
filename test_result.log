@@ -1,0 +1,54 @@
+Loading image: c:\reimbursement\untuk_test\Screenshot 2026-01-11 181638.png
+Image shape: (867, 661, 3)
+Preprocessing...
+Processed shape: (867, 661, 3)
+Running OCR...
+OCR results count: 23
+=== ALL OCR TEXT ===
+0: 'PERTAMINA' (conf=1.00)
+1: '64.731.02' (conf=1.00)
+2: 'SPBU RTA MILONO' (conf=0.99)
+3: 'J1. RTA MILONO PALANGKA RAYA' (conf=0.97)
+4: 'No Trans : 2315892' (conf=0.95)
+5: 'Shift : 2' (conf=0.99)
+6: '12:42:37' (conf=1.00)
+7: 'Waktu : 24/06/2023' (conf=1.00)
+8: ': 2' (conf=0.99)
+9: 'Pulau/Pompa' (conf=1.00)
+10: ': PERTALITE' (conf=0.99)
+11: 'Nama Produk' (conf=0.99)
+12: ': Rp. 10,000' (conf=0.99)
+13: 'Harga/Liter' (conf=1.00)
+14: ': (L) 3.00' (conf=0.96)
+15: 'Volume' (conf=1.00)
+16: ': Rp. 30,000' (conf=1.00)
+17: 'Total Harga' (conf=1.00)
+18: ': RISA' (conf=0.99)
+19: 'Operator' (conf=1.00)
+20: 'CASH' (conf=1.00)
+21: '30,000' (conf=1.00)
+22: 'TERIMA KASIH SELAMAT JALAN' (conf=1.00)
+=== TEXT LINES ===
+Line 0: PERTAMINA
+Line 1: 64.731.02
+Line 2: SPBU RTA MILONO
+Line 3: J1. RTA MILONO PALANGKA RAYA
+Line 4: Shift : 2 No Trans : 2315892
+Line 5: Waktu : 24/06/2023 12:42:37
+Line 6: Pulau/Pompa : 2
+Line 7: Nama Produk : PERTALITE
+Line 8: Harga/Liter : Rp. 10,000
+Line 9: Volume : (L) 3.00
+Line 10: Total Harga : Rp. 30,000
+Line 11: Operator : RISA
+Line 12: CASH
+Line 13: 30,000
+Line 14: TERIMA KASIH SELAMAT JALAN
+=== EXTRACTION ===
+  merchant_name: PERTAMINA
+  transaction_date_raw: 24/06/2023
+  transaction_date: 2023-06-24
+  total_amount_raw: 30,000
+  total_amount_value: 30000.0
+  confidence_score: 0.893
+DONE

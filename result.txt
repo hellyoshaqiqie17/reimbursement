@@ -1,0 +1,195 @@
+python : 
+[33mChecking 
+connectivity to the 
+model hosters, this 
+may take a while. To 
+bypass this check, 
+set `DISABLE_MODEL_SO
+URCE_CHECK` to 
+`True`.[0m
+At line:1 char:1
++ python 
+test_user_image.py 
+2>&1 | Out-File 
+-FilePath result.txt 
+-Encod ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([33mCh   
+ ecking c... to `    
+True`.[0m:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+INFO: Could not find 
+files for the given 
+pattern(s).
+C:\Users\MSI MODERN 1
+4\AppData\Local\Packa
+ges\PythonSoftwareFou
+ndation.Python.3.12_q
+bz5n2kfra8p0\LocalCac
+he\local-packages\Pyt
+hon312\site-packages\
+paddle\utils\cpp_exte
+nsion\extension_utils
+.py:718: 
+UserWarning: No 
+ccache found. Please 
+be aware that 
+recompiling all 
+source files may be 
+required. You can 
+download and install 
+ccache from: https://
+github.com/ccache/cca
+che/blob/master/doc/I
+NSTALL.md
+  warnings.warn(warni
+ng_message)
+[32mCreating model: 
+('PP-LCNet_x1_0_doc_o
+ri', None)[0m
+[32mModel files 
+already exist. Using 
+cached files. To 
+redownload, please 
+delete the directory 
+manually: 
+`C:\Users\MSI MODERN 
+14\.paddlex\official_
+models\PP-LCNet_x1_0_
+doc_ori`.[0m
+WARNING: Logging 
+before 
+InitGoogleLogging() 
+is written to STDERR
+I0114 
+21:10:02.436174 
+23132 onednn_context.
+cc:81] oneDNN v3.6.2
+[32mCreating model: 
+('UVDoc', None)[0m
+[32mModel files 
+already exist. Using 
+cached files. To 
+redownload, please 
+delete the directory 
+manually: 
+`C:\Users\MSI MODERN 
+14\.paddlex\official_
+models\UVDoc`.[0m
+[32mCreating model: 
+('PP-LCNet_x1_0_textl
+ine_ori', None)[0m
+[32mModel files 
+already exist. Using 
+cached files. To 
+redownload, please 
+delete the directory 
+manually: 
+`C:\Users\MSI MODERN 
+14\.paddlex\official_
+models\PP-LCNet_x1_0_
+textline_ori`.[0m
+[32mCreating model: 
+('PP-OCRv5_server_det
+', None)[0m
+[32mModel files 
+already exist. Using 
+cached files. To 
+redownload, please 
+delete the directory 
+manually: 
+`C:\Users\MSI MODERN 
+14\.paddlex\official_
+models\PP-OCRv5_serve
+r_det`.[0m
+[32mCreating model: 
+('en_PP-OCRv5_mobile_
+rec', None)[0m
+[32mModel files 
+already exist. Using 
+cached files. To 
+redownload, please 
+delete the directory 
+manually: 
+`C:\Users\MSI MODERN 
+14\.paddlex\official_
+models\en_PP-OCRv5_mo
+bile_rec`.[0m
+Loading image: c:\reimbursement\untuk_test\Screenshot 2026-01-11 181638.png
+[2026-01-14 
+21:10:26,689] [ 
+WARNING] 
+extractors.py:156 - 
+No valid date found 
+in receipt
+Image shape: (867, 661, 3)
+[2026-01-14 
+21:10:26,693] [ 
+WARNING] 
+extractors.py:272 - 
+Could not extract 
+total amount
+
+Preprocessing...
+Processed shape: (867, 661, 3)
+
+Running OCR...
+OCR results count: 23
+
+=== ALL OCR TEXT ===
+0: '' (conf=0.00)
+1: '' (conf=0.00)
+2: '' (conf=0.00)
+3: '' (conf=0.00)
+4: '' (conf=0.00)
+5: '' (conf=0.00)
+6: '' (conf=0.00)
+7: '' (conf=0.00)
+8: '' (conf=0.00)
+9: '' (conf=0.00)
+10: '' (conf=0.00)
+11: '' (conf=0.00)
+12: '' (conf=0.00)
+13: '' (conf=0.00)
+14: '' (conf=0.00)
+15: '' (conf=0.00)
+16: '' (conf=0.00)
+17: '' (conf=0.00)
+18: '' (conf=0.00)
+19: '' (conf=0.00)
+20: '' (conf=0.00)
+21: '' (conf=0.00)
+22: '' (conf=0.00)
+
+=== TEXT LINES ===
+Line 0: 
+Line 1: 
+Line 2: 
+Line 3: 
+Line 4:  
+Line 5:  
+Line 6:  
+Line 7:  
+Line 8:  
+Line 9:  
+Line 10:  
+Line 11:  
+Line 12: 
+Line 13: 
+Line 14: 
+
+=== EXTRACTION ===
+  merchant_name: None
+  transaction_date_raw: None
+  transaction_date: None
+  total_amount_raw: None
+  total_amount_value: None
+  confidence_score: 0.0

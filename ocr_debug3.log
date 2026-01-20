@@ -1,0 +1,303 @@
+Running PaddleOCR...
+All keys in OCRResult:
+  input_path
+  page_index
+  doc_preprocessor_res
+  dt_polys
+  model_settings
+  text_det_params
+  text_type
+  text_rec_score_thresh
+  return_word_box
+  rec_texts
+  rec_scores
+  rec_polys
+  vis_fonts
+  textline_orientation_angles
+  rec_boxes
+
+All key-value pairs:
+  input_path: None
+  page_index: None
+  doc_preprocessor_res: [DocPreprocessorResult, len=7]
+    [0]: input_path
+    [1]: page_index
+    [2]: input_img
+    [3]: model_settings
+    [4]: angle
+    [5]: rot_img
+    [6]: output_img
+  dt_polys: [list, len=23]
+    [0]: [[287  31]
+ ...
+ [286  66]]
+    [1]: [[252  99]
+ ...
+ [252 136]]
+    [2]: [[207 146]
+ ...
+ [208 180]]
+    [3]: [[109 190]
+ ...
+ [109 221]]
+    [4]: [[ 49 230]
+ ...
+ [ 48 265]]
+    [5]: [[314 234]
+ ...
+ [314 265]]
+    [6]: [[ 49 277]
+ ...
+ [ 49 311]]
+    [7]: [[380 278]
+ ...
+ [380 306]]
+    [8]: [[ 51 366]
+ ...
+ [ 51 397]]
+    [9]: [[270 361]
+ ...
+ [270 397]]
+    [10]: [[ 50 412]
+ ...
+ [ 50 443]]
+    [11]: [[271 410]
+ ...
+ [272 441]]
+    [12]: [[ 51 455]
+ ...
+ [ 51 486]]
+    [13]: [[271 452]
+ ...
+ [271 483]]
+    [14]: [[ 52 497]
+ ...
+ [ 51 526]]
+    [15]: [[272 496]
+ ...
+ [272 527]]
+    [16]: [[ 51 540]
+ ...
+ [ 51 571]]
+    [17]: [[273 539]
+ ...
+ [273 570]]
+    [18]: [[ 53 588]
+ ...
+ [ 53 616]]
+    [19]: [[273 585]
+ ...
+ [273 614]]
+    [20]: [[ 55 672]
+ ...
+ [ 55 702]]
+    [21]: [[519 707]
+ ...
+ [518 743]]
+    [22]: [[129 798]
+ ...
+ [129 829]]
+  model_settings: [dict, len=2]
+    [0]: use_doc_preprocessor
+    [1]: use_textline_orientation
+  text_det_params: [dict, len=6]
+    [0]: limit_side_len
+    [1]: limit_type
+    [2]: thresh
+    [3]: max_side_limit
+    [4]: box_thresh
+    [5]: unclip_ratio
+  text_type: general
+  text_rec_score_thresh: 0.0
+  return_word_box: False
+  rec_texts: [list, len=23]
+    [0]: PERTAMINA
+    [1]: 64.731.02
+    [2]: SPBU RTA MILONO
+    [3]: J1. RTA MILONO PALANGKA RAYA
+    [4]: Shift : 2
+    [5]: No Trans : 2315892
+    [6]: Waktu : 24/06/2023
+    [7]: 12:42:37
+    [8]: Pulau/Pompa
+    [9]: : 2
+    [10]: Nama Produk
+    [11]: : PERTALITE
+    [12]: Harga/Liter
+    [13]: : Rp. 10,000
+    [14]: Volume
+    [15]: : (L) 3.00
+    [16]: Total Harga
+    [17]: : Rp. 30,000
+    [18]: Operator
+    [19]: : RISA
+    [20]: CASH
+    [21]: 30,000
+    [22]: TERIMA KASIH SELAMAT JALAN
+  rec_scores: [list, len=23]
+    [0]: 0.9995808005332947
+    [1]: 0.9959146976470947
+    [2]: 0.9923612475395203
+    [3]: 0.9727159142494202
+    [4]: 0.9927043914794922
+    [5]: 0.9535766243934631
+    [6]: 0.997582733631134
+    [7]: 0.9997906684875488
+    [8]: 0.9996261596679688
+    [9]: 0.9876497387886047
+    [10]: 0.9859614968299866
+    [11]: 0.9939502477645874
+    [12]: 0.9997130036354065
+    [13]: 0.9910641312599182
+    [14]: 0.9991937279701233
+    [15]: 0.963577389717102
+    [16]: 0.9986059069633484
+    [17]: 0.9962442517280579
+    [18]: 0.9997842311859131
+    [19]: 0.9949840903282166
+    [20]: 0.9998383522033691
+    [21]: 0.9996059536933899
+    [22]: 0.9976287484169006
+  rec_polys: [list, len=23]
+    [0]: [[287  31]
+ ...
+ [286  66]]
+    [1]: [[252  99]
+ ...
+ [252 136]]
+    [2]: [[207 146]
+ ...
+ [208 180]]
+    [3]: [[109 190]
+ ...
+ [109 221]]
+    [4]: [[ 49 230]
+ ...
+ [ 48 265]]
+    [5]: [[314 234]
+ ...
+ [314 265]]
+    [6]: [[ 49 277]
+ ...
+ [ 49 311]]
+    [7]: [[380 278]
+ ...
+ [380 306]]
+    [8]: [[ 51 366]
+ ...
+ [ 51 397]]
+    [9]: [[270 361]
+ ...
+ [270 397]]
+    [10]: [[ 50 412]
+ ...
+ [ 50 443]]
+    [11]: [[271 410]
+ ...
+ [272 441]]
+    [12]: [[ 51 455]
+ ...
+ [ 51 486]]
+    [13]: [[271 452]
+ ...
+ [271 483]]
+    [14]: [[ 52 497]
+ ...
+ [ 51 526]]
+    [15]: [[272 496]
+ ...
+ [272 527]]
+    [16]: [[ 51 540]
+ ...
+ [ 51 571]]
+    [17]: [[273 539]
+ ...
+ [273 570]]
+    [18]: [[ 53 588]
+ ...
+ [ 53 616]]
+    [19]: [[273 585]
+ ...
+ [273 614]]
+    [20]: [[ 55 672]
+ ...
+ [ 55 702]]
+    [21]: [[519 707]
+ ...
+ [518 743]]
+    [22]: [[129 798]
+ ...
+ [129 829]]
+  vis_fonts: [list, len=23]
+    [0]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [1]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [2]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [3]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [4]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [5]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [6]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [7]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [8]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [9]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [10]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [11]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [12]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [13]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [14]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [15]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [16]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [17]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [18]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [19]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [20]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [21]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+    [22]: <paddlex.utils.fonts.Font object at 0x0000023B4F0B74A0>
+  textline_orientation_angles: [list, len=23]
+    [0]: 0
+    [1]: 0
+    [2]: 0
+    [3]: 0
+    [4]: 0
+    [5]: 0
+    [6]: 0
+    [7]: 0
+    [8]: 0
+    [9]: 0
+    [10]: 0
+    [11]: 0
+    [12]: 0
+    [13]: 0
+    [14]: 0
+    [15]: 0
+    [16]: 0
+    [17]: 0
+    [18]: 0
+    [19]: 0
+    [20]: 0
+    [21]: 0
+    [22]: 0
+  rec_boxes: [ndarray, len=23]
+    [0]: [286 ...  68]
+    [1]: [252 ... 136]
+    [2]: [207 ... 180]
+    [3]: [109 ... 221]
+    [4]: [ 48 ... 268]
+    [5]: [314 ... 265]
+    [6]: [ 49 ... 311]
+    [7]: [380 ... 306]
+    [8]: [ 51 ... 397]
+    [9]: [270 ... 397]
+    [10]: [ 50 ... 443]
+    [11]: [271 ... 441]
+    [12]: [ 51 ... 486]
+    [13]: [271 ... 483]
+    [14]: [ 51 ... 528]
+    [15]: [272 ... 527]
+    [16]: [ 51 ... 573]
+    [17]: [273 ... 570]
+    [18]: [ 53 ... 616]
+    [19]: [273 ... 614]
+    [20]: [ 55 ... 702]
+    [21]: [518 ... 746]
+    [22]: [129 ... 830]
+DONE
