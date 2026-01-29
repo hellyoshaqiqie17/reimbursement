@@ -1,11 +1,11 @@
 # Receipt OCR Pipeline Dependencies
 
 # Deep Learning & OCR
-paddlepaddle==2.6.1
-paddleocr==2.7.3
+paddlepaddle>=2.6.0
+paddleocr>=2.7.3
 
 # Image Processing
-opencv-python==4.9.0.80
+opencv-python-headless>=4.9.0.80
 numpy>=1.24.0
 
 # Web Framework
