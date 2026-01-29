@@ -158,18 +158,18 @@ class ReceiptPreprocessor:
         return rotated
     
     def _denoise(self, image: np.ndarray) -> np.ndarray:
-        """Apply denoising to reduce noise from thermal/dot matrix printing."""
-        return cv2.fastNlMeansDenoising(
-            image,
-            h=self.config.DENOISE_STRENGTH,
-            templateWindowSize=7,
-            searchWindowSize=21
-        )
+        """
+        Apply denoising to reduce noise from thermal/dot matrix printing.
+        Using bilateralFilter which is much faster than fastNlMeansDenoising
+        while still preserving edges for OCR.
+        """
+        # bilateralFilter: d=9 (diameter), sigmaColor=75, sigmaSpace=75
+        # This is 10-50x faster than fastNlMeansDenoising while preserving edges
+        return cv2.bilateralFilter(image, d=9, sigmaColor=75, sigmaSpace=75)
     
     def _enhance_contrast(self, image: np.ndarray) -> np.ndarray:
         """
-        Enhance contrast using CLAHE (Contrast Limited Adaptive Histogram Equalization).
-        This helps with receipts that have faded text or uneven lighting.
+         pake CLAHE (Contrast Limited Adaptive Histogram Equalization).
         """
         clahe = cv2.createCLAHE(
             clipLimit=self.config.CLAHE_CLIP_LIMIT,
@@ -178,10 +178,7 @@ class ReceiptPreprocessor:
         return clahe.apply(image)
     
     def apply_adaptive_threshold(self, image: np.ndarray) -> np.ndarray:
-        """
-        Optional: Apply adaptive thresholding to create binary image.
-        Useful for very low contrast receipts.
-        """
+       
         return cv2.adaptiveThreshold(
             image,
             255,

@@ -28,6 +28,17 @@ async def lifespan(app: FastAPI):
     logger.info("Starting Receipt OCR Pipeline API...")
     logger.info("API documentation available at /docs")
     
+    # Pre-load OCR model to avoid delay on first request
+    logger.info("Pre-loading PaddleOCR model (this may take 15-30 seconds)...")
+    try:
+        from app.api.routes import get_ocr_engine
+        ocr_engine = get_ocr_engine()
+        # Trigger model loading by accessing the internal OCR
+        ocr_engine._get_ocr()
+        logger.info("PaddleOCR model loaded successfully!")
+    except Exception as e:
+        logger.warning(f"Failed to pre-load OCR model: {e}. Will load on first request.")
+    
     yield
     
     # Shutdown
