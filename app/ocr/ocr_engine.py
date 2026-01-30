@@ -2,6 +2,13 @@
 OCR Engine Module using PaddleOCR.
 Optimized for receipt fonts including dot matrix and thermal print.
 """
+# Disable OneDNN/MKLDNN to fix Cloud Run compatibility issues
+import os
+os.environ['FLAGS_use_mkldnn'] = '0'
+os.environ['DISABLE_MODEL_SOURCE_CHECK'] = 'true'
+os.environ['MKLDNN_CACHE_CAPACITY'] = '0'
+os.environ['FLAGS_enable_pir_in_executor'] = '0'
+
 import numpy as np
 from typing import List, Dict, Tuple, Optional
 import logging

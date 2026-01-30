@@ -31,6 +31,11 @@ EXPOSE 8080
 # Set environment variables
 ENV PORT=8080
 ENV PYTHONUNBUFFERED=1
+# Disable OneDNN/MKLDNN for Cloud Run compatibility
+ENV FLAGS_use_mkldnn=0
+ENV MKLDNN_CACHE_CAPACITY=0
+ENV FLAGS_enable_pir_in_executor=0
+ENV DISABLE_MODEL_SOURCE_CHECK=true
 
 # Run the application
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]

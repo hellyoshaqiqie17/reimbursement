@@ -9,21 +9,21 @@ OCR results count: 23
 1: '64.731.02' (conf=1.00)
 2: 'SPBU RTA MILONO' (conf=0.99)
 3: 'J1. RTA MILONO PALANGKA RAYA' (conf=0.97)
-4: 'No Trans : 2315892' (conf=0.95)
-5: 'Shift : 2' (conf=0.99)
-6: '12:42:37' (conf=1.00)
-7: 'Waktu : 24/06/2023' (conf=1.00)
-8: ': 2' (conf=0.99)
+4: 'Shift : 2' (conf=1.00)
+5: 'No Trans : 2315892' (conf=0.99)
+6: 'Waktu : 24/06/2023' (conf=0.98)
+7: '12:42:37' (conf=1.00)
+8: ': 2' (conf=0.97)
 9: 'Pulau/Pompa' (conf=1.00)
-10: ': PERTALITE' (conf=0.99)
-11: 'Nama Produk' (conf=0.99)
+10: ': PERTALITE' (conf=0.98)
+11: 'Nama Produk' (conf=0.98)
 12: ': Rp. 10,000' (conf=0.99)
 13: 'Harga/Liter' (conf=1.00)
 14: ': (L) 3.00' (conf=0.96)
 15: 'Volume' (conf=1.00)
-16: ': Rp. 30,000' (conf=1.00)
-17: 'Total Harga' (conf=1.00)
-18: ': RISA' (conf=0.99)
+16: ': Rp. 30,000' (conf=0.99)
+17: 'Total Harga' (conf=0.99)
+18: ': RISA' (conf=0.94)
 19: 'Operator' (conf=1.00)
 20: 'CASH' (conf=1.00)
 21: '30,000' (conf=1.00)
@@ -50,5 +50,5 @@ Line 14: TERIMA KASIH SELAMAT JALAN
   transaction_date: 2023-06-24
   total_amount_raw: 30,000
   total_amount_value: 30000.0
-  confidence_score: 0.893
+  confidence_score: 0.891
 DONE
