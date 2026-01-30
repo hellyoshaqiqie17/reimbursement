@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "b5a7c8d9-e1f2-4a3b-8c9d-0e1f2a3b4c5d",
+		"name": "Receipt OCR API",
+		"description": "API documentation for Receipt OCR Pipeline. Handles extraction of merchant name, date, and total amount from receipt images.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/health",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"health"
+					]
+				},
+				"description": "Check if the API service is running and healthy."
+			},
+			"response": []
+		},
+		{
+			"name": "Extract Receipt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"description": "Receipt image file (JPG, PNG, WEBP)"
+						},
+						{
+							"key": "debug",
+							"value": "false",
+							"type": "text",
+							"description": "Set to 'true' to get full OCR text and processing time",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/extract",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"extract"
+					]
+				},
+				"description": "Upload a receipt image to extract data (Merchant, Date, Total Amount)."
+			},
+			"response": []
+		},
+		{
+			"name": "Extract Receipt (Debug Mode)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"description": "Receipt image file"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/extract?debug=true",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"extract"
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "true",
+							"description": "Enable debug output"
+						}
+					]
+				},
+				"description": "Extract receipt data with additional debug information (raw OCR text, processing time)."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://reimbursement-544676101248.asia-southeast2.run.app",
+			"type": "string",
+			"description": "API Base URL (Change to http://localhost:8000 for local testing)"
+		}
+	]
+}
